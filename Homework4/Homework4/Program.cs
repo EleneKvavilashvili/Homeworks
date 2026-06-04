@@ -10,16 +10,16 @@ namespace Homework4
             #region Problem1
 
             /*Console.Write("Enter array size: ");
-            int n=int.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());
             int[] array = new int[n];
             Console.WriteLine($"Enter {n} elements for the array: ");
 
             int oddCount = 0;
             int evenCount = 0;
 
-            for (int i=0; i<n; i++)
+            for (int i = 0; i < n; i++)
             {
-                Console.Write($"Element {i+1}: ");
+                Console.Write($"Element {i + 1}: ");
                 array[i] = int.Parse(Console.ReadLine());
                 if (array[i] % 2 == 0)
                 {
@@ -37,7 +37,7 @@ namespace Homework4
             int oddIndex = 0;
             int evenIndex = 0;
 
-            for(int i=0; i<n; i++)
+            for (int i = 0; i < n; i++)
             {
                 if (array[i] % 2 == 0)
                 {
@@ -52,7 +52,7 @@ namespace Homework4
             }
 
             Console.WriteLine("\nEvens are: ");
-            foreach(int i in evens)
+            foreach (int i in evens)
             {
                 Console.Write($"{i} ");
             }
@@ -121,6 +121,66 @@ namespace Homework4
             }*/
 
             #endregion
+
+            /*string word = Console.ReadLine();
+            for(int i=0; i<word.Length/2; i++)
+            {
+                if (word[i] != word[word.Length - 1 - i])
+                {
+                    Console.WriteLine("Not a palindrome");
+                    return;
+                }
+            }
+            Console.WriteLine("Is Palindrome");*/
+
+            /*int n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
+            for(int i=0; i < n; i++)
+            {
+                arr[i]=int.Parse(Console.ReadLine());
+            }
+            for(int i=0; i<n; i++)
+            {
+                for(int j=0; j<n-1; j++)
+                {
+                    if (arr[j] > arr[j + 1])
+                    {
+                        int temp = arr[j + 1];
+                        arr[j + 1] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write($"{arr[i]} ");
+            }*/
+
+            Console.Write("Enter array size: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write($"Enter element N{i + 1}: ");
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+            for (int i = 0; i < n; i++)
+            {
+                int temp = arr[i];
+                int j = i - 1;
+
+                while(j>=0 && arr[j] > temp)
+                {
+                    arr[j + 1] = arr[j];
+                    j = j - 1;
+                }
+
+                arr[j + 1] = temp;
+            }
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write($"{arr[i]} ");
+            }
         }
 
         #region problem2 functions
