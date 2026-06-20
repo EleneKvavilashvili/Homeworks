@@ -6,7 +6,7 @@ namespace Homework7
     {
         static void Main(string[] args)
         {
-            Console.Write("Problem? (1, 2 ან 3): ");
+            Console.Write("Problem? (1, 2, 3): ");
             string choice = Console.ReadLine();
 
             switch (choice)
@@ -18,7 +18,7 @@ namespace Homework7
                     RunTask2();
                     break;
                 case "3":
-                    //RunTask3();
+                    RunTask3();
                     break;
                 default:
                     Console.WriteLine("INVALID");
@@ -64,6 +64,18 @@ namespace Homework7
             Console.WriteLine($"Years left: {student.YearsLeftToGraduate()} years.");
             string chosenSubject = student.GetRandomSubject();
             teacher.CheckSubject(chosenSubject);
+        }
+
+        static void RunTask3()
+        {
+            Student2 s1 = new GoodStudent("Elene");
+            Student2 s2 = new LazyStudent("George");
+            Student2 s3 = new GoodStudent("Alex");
+
+            List<Student2> list = new List<Student2> { s1, s2, s3 };
+            ClassRoom classroom = new ClassRoom(list);
+
+            classroom.PrintAllStudentActivities();
         }
     }
 }

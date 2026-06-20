@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{3B8F8529-35A7-4B21-96A3-65729AD7BEAF}|Homework7\\Homework7.csproj|d:\\commschool\\homeworks\\homework7\\homework7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B8F8529-35A7-4B21-96A3-65729AD7BEAF}|Homework7\\Homework7.csproj|solutionrelative:homework7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B8F8529-35A7-4B21-96A3-65729AD7BEAF}|Homework7\\Homework7.csproj|d:\\commschool\\homeworks\\homework7\\homework7\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B8F8529-35A7-4B21-96A3-65729AD7BEAF}|Homework7\\Homework7.csproj|solutionrelative:homework7\\classroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,13 +26,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClassRoom.cs",
+              "DocumentMoniker": "D:\\COMMSCHOOL\\HomeWorks\\Homework7\\Homework7\\ClassRoom.cs",
+              "RelativeDocumentMoniker": "Homework7\\ClassRoom.cs",
+              "ToolTip": "D:\\COMMSCHOOL\\HomeWorks\\Homework7\\Homework7\\ClassRoom.cs",
+              "RelativeToolTip": "Homework7\\ClassRoom.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwBYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T01:58:55.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\COMMSCHOOL\\HomeWorks\\Homework7\\Homework7\\Program.cs",
               "RelativeDocumentMoniker": "Homework7\\Program.cs",
-              "ToolTip": "D:\\COMMSCHOOL\\HomeWorks\\Homework7\\Homework7\\Program.cs",
-              "RelativeToolTip": "Homework7\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\COMMSCHOOL\\HomeWorks\\Homework7\\Homework7\\Program.cs*",
+              "RelativeToolTip": "Homework7\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-11T15:40:48.903Z",
               "EditorCaption": ""
