@@ -44,7 +44,7 @@ namespace final1
         {
             try
             {
-                string jsonText = JsonConvert.SerializeObject(accounts);
+                string jsonText = JsonConvert.SerializeObject(accounts, Formatting.Indented);
                 File.WriteAllText(file, jsonText);
             }
             catch (Exception e)

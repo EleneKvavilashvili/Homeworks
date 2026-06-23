@@ -4,13 +4,13 @@
     "LastName": "Doe",
     "CardDetails": {
       "CardNumber": "1234-5678-9101-1121",
-      "ExpirationDate": "12/26",
+      "ExpirationDate": "07/26",
       "CVC": "000",
       "PinCode": "1234"
     },
     "TransactionHistory": [
       {
-        "TransactionDate": "2026-06-23T06:00:00Z",
+        "TransactionDate": "2024-01-03T10:15:30Z",
         "TransactionType": "Deposit",
         "Amount": 100.0,
         "AmountGEL": 100.0,

@@ -10,7 +10,7 @@ namespace final1
     {
         public string FirstName {  get; set; }
         public string LastName { get; set; }
-        public CardDetails Card {  get; set; }
+        public CardDetails CardDetails {  get; set; }
         public List<Transaction> TransactionHistory {  get; set; } = new List<Transaction>();
     }
 }
