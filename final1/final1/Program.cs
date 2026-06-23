@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace final1
 {
@@ -156,19 +158,16 @@ namespace final1
             if (currency == "1" && gelBalance >= amount)
             {
                 curr = "GEL";
-                gelBalance -= amount;
                 addTransaction(user, "Withdraw", amount, -amount, 0, 0);
             }
             else if (currency == "2" && usdBalance >= amount)
             {
                 curr = "USD";
-                usdBalance -= amount;
                 addTransaction(user, "Withdraw", amount, 0, -amount, 0);
             }
             else if (currency == "3" && eurBalance >= amount)
             {
                 curr = "EUR";
-                eurBalance -= amount;
                 addTransaction(user, "Withdraw", amount, 0, 0, -amount);
             }
             else
@@ -257,19 +256,16 @@ namespace final1
             if (currency == "1")
             {
                 curr = "GEL";
-                gelBalance += amount;
                 addTransaction(user, "Deposit", amount, amount, 0, 0);
             }
             else if (currency == "2")
             {
                 curr = "USD";
-                usdBalance += amount;
                 addTransaction(user, "Deposit", amount, 0, amount, 0);
             }
             else
             {
                 curr = "EUR";
-                eurBalance += amount;
                 addTransaction(user, "Deposit", amount, 0, 0, amount);
             }
             Database.log($"{amount}{curr} deposited");
@@ -326,6 +322,19 @@ namespace final1
             {
                 Database.logError("Attempted to exchange a negative amount");
                 Console.WriteLine("Error: Deposit amount must be greater than zero!");
+                Console.WriteLine("Press any key to return to menu...");
+                Console.ReadKey();
+                return;
+            }
+
+            decimal gelBalance = user.TransactionHistory.Sum(t => t.AmountGEL);
+            decimal usdBalance = user.TransactionHistory.Sum(t => t.AmountUSD);
+            decimal eurBalance = user.TransactionHistory.Sum(t => t.AmountEUR);
+
+            if ((currency1 == "1" && amount > gelBalance) ||(currency1 == "2" && amount > usdBalance) ||(currency1 == "3" && amount > eurBalance))
+            {
+                Database.logError("Insufficient funds for currency exchange.");
+                Console.WriteLine("Error: Insufficient funds on your balance!");
                 Console.WriteLine("Press any key to return to menu...");
                 Console.ReadKey();
                 return;
@@ -396,6 +405,8 @@ namespace final1
 
             Console.WriteLine("Exchanged");
             Database.log($"Exchanged {amount}{curr1} to {amount*k}{curr2}");
+            Console.WriteLine("Press any key to return to menu...");
+            Console.ReadKey();
         }
 
         static void addTransaction(UserAccount user, string type,  decimal amount, decimal gel, decimal usd, decimal eur)
