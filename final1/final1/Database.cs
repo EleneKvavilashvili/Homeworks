@@ -55,7 +55,21 @@ namespace final1
 
         public static void logError(string e)
         {
-            string message = $"{DateTime.Now} ERROR: {e}";
+            string message = $"{DateTime.Now} ERROR: {e}\n";
+            try
+            {
+                File.AppendAllText(logs, message);
+            }
+            catch
+            {
+                /*Console.WriteLine("Couldn't log error in file!");
+                Console.WriteLine($"{message}\n");*/
+            }
+        }
+
+        public static void log(string l)
+        {
+            string message = $"{DateTime.Now} {l}\n";
             try
             {
                 File.AppendAllText(logs, message);
