@@ -62,8 +62,7 @@ namespace final1
             }
             catch
             {
-                /*Console.WriteLine("Couldn't log error in file!");
-                Console.WriteLine($"{message}\n");*/
+                
             }
         }
 
@@ -76,8 +75,7 @@ namespace final1
             }
             catch
             {
-                /*Console.WriteLine("Couldn't log error in file!");
-                Console.WriteLine($"{message}\n");*/
+                
             }
         }
     }

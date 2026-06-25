@@ -32,3 +32,24 @@
 6/23/2026 3:53:19 PM Pin entered. User John Doe logged in.
 6/23/2026 3:53:30 PM Trying to deposit...
 6/23/2026 3:53:35 PM 250USD deposited
+6/25/2026 6:36:32 PM Card details entered. Found user: Elene Kvavilashvili
+6/25/2026 6:36:35 PM Pin entered. User Elene Kvavilashvili logged in.
+6/25/2026 6:36:40 PM Checked balance.
+6/25/2026 6:37:11 PM Card details entered. Found user: Elene Kvavilashvili
+6/25/2026 6:37:13 PM Pin entered. User Elene Kvavilashvili logged in.
+6/25/2026 6:37:19 PM Checked last transactions.
+6/25/2026 6:53:51 PM Card details entered. Found user: Elene Kvavilashvili
+6/25/2026 6:53:53 PM Pin entered. User Elene Kvavilashvili logged in.
+6/25/2026 6:53:57 PM ERROR: Tried to call invalid action.
+6/25/2026 6:55:29 PM Card details entered. Found user: Elene Kvavilashvili
+6/25/2026 6:55:31 PM Pin entered. User Elene Kvavilashvili logged in.
+6/25/2026 6:55:33 PM Trying to deposit...
+6/25/2026 6:55:41 PM ERROR: Invalid amount entered
+6/25/2026 6:55:53 PM Card details entered. Found user: Elene Kvavilashvili
+6/25/2026 6:55:55 PM Pin entered. User Elene Kvavilashvili logged in.
+6/25/2026 6:55:58 PM Trying to deposit...
+6/25/2026 6:56:01 PM 300GEL deposited
+6/25/2026 6:58:17 PM Card details entered. Found user: Elene Kvavilashvili
+6/25/2026 6:58:18 PM Pin entered. User Elene Kvavilashvili logged in.
+6/25/2026 6:58:23 PM Trying to withdraw...
+6/25/2026 6:58:27 PM 300GEL withdrawn

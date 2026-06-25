@@ -90,6 +90,8 @@ namespace final1
                 default:
                     Console.WriteLine("Invalid selection.");
                     Database.logError("Tried to call invalid action.");
+                    Console.WriteLine("Press any key to return to menu...");
+                    Console.ReadKey();
                     break;
             }
             Database.saveTransactions(accounts);

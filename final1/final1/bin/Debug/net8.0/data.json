@@ -18,5 +18,33 @@
         "AmountEUR": 0.0
       }
     ]
+  },
+  {
+    "FirstName": "Elene",
+    "LastName": "Kvavilashvili",
+    "CardDetails": {
+      "CardNumber": "1234-5678",
+      "ExpirationDate": "12/26",
+      "CVC": "111",
+      "PinCode": "222"
+    },
+    "TransactionHistory": [
+      {
+        "TransactionDate": "2024-01-03T10:15:30Z",
+        "TransactionType": "Deposit",
+        "Amount": 500.0,
+        "AmountGEL": 500.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      },
+      {
+        "TransactionDate": "6/25/2026 6:36:40 PM",
+        "TransactionType": "Check Balance",
+        "Amount": 0.0,
+        "AmountGEL": 0.0,
+        "AmountUSD": 0.0,
+        "AmountEUR": 0.0
+      }
+    ]
   }
 ]
